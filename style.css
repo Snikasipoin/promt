@@ -249,6 +249,12 @@ h2 span{
     box-sizing: border-box;
     border-radius: 16px;
 }
+.card_wrapper img:hover{
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(118, 113, 117, 0.6);
+    -moz-box-shadow: 5px 5px 5px -5px rgba(118, 113, 117, 0.6);
+    box-shadow: 5px 5px 5px -5px rgba(118, 113, 117, 0.6);
+transition: box-shadow .3s ease;
+}
 .card_users{
     display: flex;
     justify-content: space-around;
@@ -588,3 +594,4 @@ footer{
 .footer_elem:hover{
     color: #E89991;
 }
+
