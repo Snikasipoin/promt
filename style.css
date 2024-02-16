@@ -31,10 +31,22 @@ header{
 input:active, input:hover, input:focus{
     outline: none;
 }
+h2{
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-size: 58px;
+    font-weight: 200;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;  
+}
+h2 span{
+    font-weight: 700;
+}
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 80vw;
+    width: 70vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -339,4 +351,181 @@ input:active, input:hover, input:focus{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.swiper-container{
+
+    overflow: hidden;
+    padding: 30px 0 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.swiper-container h1{
+    border-bottom: solid 2px #eec121;
+    margin-bottom: 3vh;
+}
+.image-slider__image{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-container .swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+    background-color: #eec121;
+}
+
+.swiper_head{
+    margin-top: 57px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid rgb(147, 147, 147);
+}
+.swiper_head h2{
+    width: 60%;
+}
+.swiper_button{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 82px;
+    background-image: url(img/Buttons\ Container.png);
+    gap: 16px;
+}
+.swiper-prev{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    width: 62px;
+    height: 62px;
+    background: rgb(28, 28, 33);
+}
+
+.swiper-next{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    width: 62px;
+    height: 62px;
+    background: rgb(28, 28, 33);
+}
+.item-swiper {
+    margin-left: 30px;
+	text-align: center;
+}
+.btn_wrapper{
+    font-weight: 600;
+	border-radius: 12px;
+    box-sizing: border-box;
+	color: #fff;
+	display: inline-block;
+	padding: 2px;
+	position: relative;
+    text-decoration: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.btn_wrapper span{
+    width: 199px;
+    height: 59px;
+    font-weight: 100;
+    align-items: center;
+    background: #1C1C1C;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    transition: background .5s ease;
+}
+
+.btn_wrapper:hover > span {
+	background: transparent;
+}
+.swiper-back{
+    margin-top: 180px;
+    background: url(img/Rectangle\ 143.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 103vw;
+    left: -30px;
+}
+
+.full-stars {
+	text-align: center;
+}
+.full-stars .rating-group {
+	display: inline-flex;
+}
+.full-stars input {
+	position: absolute;
+	left: -9999px;
+}
+.full-stars label {
+	margin: 0;
+	cursor: pointer;
+}
+.full-stars label svg {
+	margin: 2px;
+	height: 27px;
+	width: 27px;
+	fill: #CDC500;
+	transition: fill 0.3s;
+}
+.full-stars input:checked ~ label svg {
+	fill: #F2F2F3;
+}
+.full-stars .rating-group:hover label svg {
+	fill: #CDC500;
+}
+.full-stars .rating-group input:hover ~ label svg {
+	fill: #F2F2F3;
+}
+.slide_bottom{
+    margin-top: 19px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.slide_bottom a {
+    color: rgb(242, 242, 243);
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+.score p{
+    color: rgb(202, 202, 206);
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.swiper-img{
+    border-top: 3px solid #FFCC70;
+    width: 410px;
+    height: 519px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    object-fit: cover;
 }
