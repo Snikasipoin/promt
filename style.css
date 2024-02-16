@@ -414,7 +414,14 @@ h2 span{
     height: 62px;
     background: rgb(28, 28, 33);
 }
-
+.swiper-prev:hover{
+    background: rgb(50, 50, 54);
+    transition: background .5s ease;
+    -webkit-box-shadow: 0px 5px 21px 12px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 0px 5px 21px 12px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 0px 5px 21px 12px rgba(34, 60, 80, 0.2) inset;
+    
+}
 .swiper-next{
     cursor: pointer;
     display: flex;
@@ -425,6 +432,15 @@ h2 span{
     height: 62px;
     background: rgb(28, 28, 33);
 }
+.swiper-next:hover{
+    background: rgb(50, 50, 54);
+    transition: background .5s ease;
+    -webkit-box-shadow: 0px 5px 21px 12px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 0px 5px 21px 12px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 0px 5px 21px 12px rgba(34, 60, 80, 0.2) inset;
+    
+}
+
 .item-swiper {
     margin-left: 30px;
 	text-align: center;
@@ -457,6 +473,7 @@ h2 span{
 }
 .swiper-back{
     margin-top: 180px;
+    padding-bottom: 100px;
     background: url(img/Rectangle\ 143.png) no-repeat;
     background-size: cover;
     position: relative;
@@ -502,6 +519,8 @@ h2 span{
     width: 100%;
 }
 .slide_bottom a {
+    border: #f2f2f300 solid 2px;
+    padding: 5px;
     color: rgb(242, 242, 243);
     font-family: Helvetica;
     font-size: 18px;
@@ -510,6 +529,12 @@ h2 span{
     letter-spacing: 0%;
     text-align: left;
     text-transform: uppercase;
+}
+.slide_bottom a:hover{
+    border: #f2f2f383 solid 2px;
+    border-radius: 5px;
+    padding: 5px;
+    transition: border 0.5s ease;
 }
 .score p{
     color: rgb(202, 202, 206);
@@ -528,4 +553,38 @@ h2 span{
     box-sizing: border-box;
     border-radius: 16px;
     object-fit: cover;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    height: 42px;
+    width: 100vw;
+    box-sizing: border-box;
+    border: 1px solid rgb(38, 38, 38);
+    background: rgb(28, 28, 28);
+}
+.footer_navbar{
+    margin-left: 38px;
+    display: flex;
+    gap: 50px;
+}
+.footer_elem{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.footer_elem:hover{
+    color: #E89991;
 }
