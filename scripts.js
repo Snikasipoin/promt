@@ -16,3 +16,19 @@ new Swiper('.swiper-container',{
 
 });
 
+
+new Swiper('.category_wrapper',{
+    navigation:{
+        nextEl: '.right_category',
+        prevEl: '.left_category'
+    },
+    slidesPerView: 11,
+    spaceBetween: 10,
+    centeredSlides: false,
+    loop:false,
+    loopedSlides: 2,  
+
+    // autoplay:{
+    //     delay: 10000,
+    // }
+});
